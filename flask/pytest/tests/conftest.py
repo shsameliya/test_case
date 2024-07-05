@@ -1,5 +1,5 @@
 import pytest
-from app import app, db  # Adjust the import path based on your project structure
+from app import app, db 
 from app.models import User
 
 
