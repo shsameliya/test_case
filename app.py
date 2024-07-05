@@ -39,10 +39,6 @@ app.config['SQLALCHEMY_DATABASE_URI'] = "mysql+pymysql://root@127.0.0.1/pytest"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
-# Import views after app creation to avoid circular imports
-# from app import views
-# from app import views 
-# from app import models
 
 if __name__ == '__main__':
     app.run(debug=True)
