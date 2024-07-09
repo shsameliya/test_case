@@ -84,7 +84,7 @@ def test_delet_user(client):
 
 
 
-@pytest.mark.parametrize("test_input,expected", [("3+5", 8), ('8+2',10), ("2+4", 6), ("6*9", 54)])
+@pytest.mark.parametrize("test_input,expected", [("3+8", 11), ('8+2',10), ("2+4", 6), ("6*9", 54)])
 def test_eval(test_input, expected):
     assert eval(test_input) == expected
 
